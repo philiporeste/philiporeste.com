@@ -1,0 +1,126 @@
+body{
+  background-color: #ffffff;
+  color:#222;
+  font-family:Arial, Helvetica, sans-serif;
+  height:100vh;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction: column;
+}
+
+.header, .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 30px;
+    margin-top: 16px;
+}
+.main{
+  flex-grow: 1;
+}
+.footer{
+  height: 40px;
+  background-color: #f2f2f2 ;
+  border-top: 1px solid #e4e4e4;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 25px;
+  padding-right: 30px;
+  /* dark grey =  #e4e4e4*/
+  /* light grey =  #f2f2f2*/
+  /* text color = #5f6368 */
+
+}
+
+
+
+.linktext {
+  display: inline-block;
+  color: #000;
+  opacity: 0.75;
+  text-decoration: none;
+  font-family: arial,sans-serif;
+  cursor: pointer;
+  font-size: 13px;
+}
+.linktext:hover{
+  text-decoration: underline;
+}
+.bottomtext{
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.profileimage{
+    background-size: 32px 32px;
+    border: 0;
+    border-radius: 50%;
+    display: inline-block;
+    margin: -1px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+}
+.flexcontainer{
+  display: flex;
+  align-items: center;
+}
+.flexcontainer > * + * {
+  margin-left:15px;
+}
+.grid {
+  color:gray;
+}
+
+.centerpage{
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: -100px;
+}
+
+.centerpage > * + * {
+  margin-top:25px;
+}
+
+.buttons{
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+.buttons:hover{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+.googlesearch{
+  border: 1px solid #dfe1e5;
+  background-color: transparent;
+  color: rgba(0,0,0,.87);
+  border-radius: 24px;
+  height: 44px;
+  width: 100%;
+  max-width: 584px;
+  min-width: 300px;
+  padding: 0 40px;
+}
+.googlesearch:hover, .googlesearch:focus-within{
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+border-color: rgba(223,225,229,0);
+}
