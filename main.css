@@ -1,30 +1,29 @@
 body {
-    min-height: 100vh;
-    height: 100%;
-    font-family: 'Mulish', sans-serif !important;
-    overflow:hidden;
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Mulish", sans-serif !important;
+  overflow-y: scroll;
 }
 
 .full-height {
-    min-height: 100vh;
-    height: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 
-.icon-size li{
-    width:3rem;
+.icon-size li {
+  width: 3rem;
 }
 
 .full-height-with-navbar {
-
 }
 
 @media only screen and (max-width: 992px) {
-    .full-height {
-        height: 100px !important;
-        min-height: 100px;
-    }
-
-    .full-height-with-navbar {
-        height: calc(100vh - 100px)
-    }
+  .full-height {
+    height: 100px !important;
+    min-height: 100px;
   }
+
+  .full-height-with-navbar {
+    height: calc(100vh - 100px);
+  }
+}
