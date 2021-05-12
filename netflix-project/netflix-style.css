@@ -1,0 +1,96 @@
+html,
+body {
+  background-color: #141414;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  padding: 16px 55px;
+}
+
+.netflixheader {
+  width: 92.5px;
+  height: 25px;
+}
+
+.netflixheader > img {
+  width: 100%;
+}
+
+.netflixbody {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.netflixbody > h1 {
+  letter-spacing: 0.03rem;
+}
+
+.profile-image {
+  /* height: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px; */
+  width: 100%;
+  border-radius: 4px;
+}
+
+.profile-container {
+  /* flex-wrap: wrap;
+  width: 50vw;
+  align-content: space-between;
+  */
+  display: flex;
+  flex-wrap: wrap;
+}
+.profileandname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: calc(200px + 4px);
+  width: inherit; */
+  height: 10vw;
+  width: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+}
+
+.profileandname img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profileandname span {
+  color: grey;
+  display: block;
+  text-align: center;
+  font-size: 1.3vw;
+  text-overflow: ellipsis;
+}
+
+.profileandname:hover {
+  cursor: pointer;
+}
+
+.profileandname:hover img {
+  border: 2px solid #e5e5e5;
+}
+.profileandname:hover span {
+  color: #e5e5e5;
+}
+
+.profile-container > * + * {
+  margin-left: 25px;
+}
