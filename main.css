@@ -13,3 +13,18 @@ body {
 .icon-size li{
     width:3rem;
 }
+
+.full-height-with-navbar {
+
+}
+
+@media only screen and (max-width: 992px) {
+    .full-height {
+        height: 100px !important;
+        min-height: 100px;
+    }
+
+    .full-height-with-navbar {
+        height: calc(100vh - 100px)
+    }
+  }
